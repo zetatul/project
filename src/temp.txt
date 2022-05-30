@@ -1,0 +1,59 @@
+<v-app>
+    <v-app-bar
+      app
+      color="primary"
+      dark
+    >
+      <div class="d-flex align-center">
+        <v-img
+          alt="Vuetify Logo"
+          class="shrink mr-2"
+          contain
+          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
+          transition="scale-transition"
+          width="40"
+        />
+      </div>
+      <span>Умный Дом</span>
+      <v-spacer></v-spacer>
+      <router-link to="/login" tag="v-btn">
+        <v-btn
+          flat
+          value="feed"
+        >
+          <span>Войти</span>
+        </v-btn>
+      </router-link>
+      <v-btn>
+        <v-icon>mdi-menu</v-icon>
+      </v-btn>
+    </v-app-bar>
+    <router-view/>
+  </v-app>
+
+  <form>
+            <h3>Sign In</h3>
+            <div class="form-group">
+                <label>Email address</label>
+                <input type="email" class="form-control form-control-lg" />
+            </div>
+            <div class="form-group">
+                <label>Password</label>
+                <input type="password" class="form-control form-control-lg" />
+            </div>
+            <button type="submit" class="btn btn-dark btn-lg btn-block">Sign In</button>
+            <p class="forgot-password text-right mt-2 mb-4">
+                <router-link to="/forgot-password">Forgot password ?</router-link>
+            </p>
+            <div class="social-icons">
+                <ul>
+                    <li><a href="#"><i class="fa fa-google"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                </ul>
+            </div>
+        </form>
+
+<v-btn>
+        <v-icon>mdi-menu</v-icon>
+      </v-btn>
